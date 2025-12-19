@@ -1,6 +1,12 @@
 @import "tailwindcss";
 
 @layer base {
+  /* --- TAMBAHAN UNTUK SMOOTH SCROLL --- */
+  html {
+    scroll-behavior: smooth; /* Agar gerakannya halus */
+    scroll-padding-top: 100px; /* Memberi jarak agar judul tidak ketutup navbar (sesuaikan angka ini) */
+  }
+
   body {
     /* Gunakan hitam pekat kamu */
     background-color: #050505;

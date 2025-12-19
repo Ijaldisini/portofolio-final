@@ -20,17 +20,17 @@ export default function About() {
             </h1>
 
             <p className="text-gray-400 text-lg leading-relaxed mb-6">
-              Seorang Web Developer yang memiliki ketertarikan besar dalam
-              pengembangan Front-End. Saya berfokus pada menciptakan pengalaman
-              digital yang menarik, responsif, dan selalu berusaha memberikan
-              solusi terbaik dalam setiap proyek yang saya kerjakan.
+              Seorang mahasiswa Informatika yang meiliki passion di Website
+              Developer. Saya berfokus pada menciptakan pengalaman digital yang
+              menarik, responsif, dan selalu berusaha memberikan solusi terbaik
+              dalam setiap proyek yang saya kerjakan.
             </p>
 
             {/* Quote Box (Kotak Kutipan) */}
             <div className="border-l-4 border-emerald-500 bg-white/5 p-4 rounded-r-xl mb-8 backdrop-blur-sm">
               <p className="italic text-gray-300 font-medium">
-                &quot;Leveraging code to build distinct, functional, and
-                user-centric digital experiences.&quot;
+                "There are three responses to a design. Yes, No, and WOW!
+                Wow is the response to aim for."
               </p>
             </div>
 

@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar";
 import Hero from "@/sections/hero";
 import About from "@/sections/about";
+import Portofolio from "@/sections/portofolio";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <div className="container mx-auto px-4">
         <Hero />
         <About />
+        <Portofolio />
       </div>
     </main>
   );

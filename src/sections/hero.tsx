@@ -13,7 +13,7 @@ const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 pt-24 md:pt-0 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center px-6 pt-24 md:pt-0 overflow-hidden">
       {/* Container Utama: Menggunakan Grid untuk membagi 2 kolom */}
       <div className="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* --- KOLOM KIRI: Teks & Tombol --- */}
