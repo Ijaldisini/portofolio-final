@@ -6,7 +6,7 @@ import dynamic from "next/dynamic";
 import Typewriter from "typewriter-effect";
 
 // Import animasi JSON (Pastikan file sudah ada di folder public/animations/)
-import developerAnimation from "../../public/animations/Developer.json";
+import developerAnimation from "../../public/animations/Robot says hello.json";
 
 // Load Lottie secara dynamic agar tidak memberatkan server
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
@@ -33,7 +33,7 @@ export default function Hero() {
             <span className="bg-gradient-to-r from-emerald-400 to-green-600 bg-clip-text text-transparent">
               iZall.
             </span>
-            <h1 className="text-1xl md:text-3xl font-bold tracking-tight leading-tight text-gray-300">
+            <div className="text-1xl md:text-3xl font-bold tracking-tight leading-tight text-gray-300">
               <Typewriter
                 options={{
                   strings: ["Website Development.", "Website Designer."],
@@ -43,7 +43,7 @@ export default function Hero() {
                   deleteSpeed: 60,
                 }}
               />
-            </h1>
+            </div>
           </h1>
 
           <p className="mt-6 max-w-lg text-gray-400 text-lg leading-relaxed">
@@ -106,7 +106,7 @@ export default function Hero() {
 
         {/* --- KOLOM KANAN: Animasi Lottie --- */}
         <div className="flex justify-center md:justify-end order-1 md:order-2">
-          <div className="w-full max-w-[350px] md:max-w-[500px]">
+          <div className="w-full max-w-[350px] md:max-w-[500px] transition-transform duration-300 hover:scale-130">
             <Lottie animationData={developerAnimation} loop={true} />
           </div>
         </div>
