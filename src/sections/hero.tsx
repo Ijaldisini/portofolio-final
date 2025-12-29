@@ -36,7 +36,7 @@ export default function Hero() {
             <div className="text-1xl md:text-3xl font-bold tracking-tight leading-tight text-gray-300">
               <Typewriter
                 options={{
-                  strings: ["Website Development.", "Website Designer."],
+                  strings: ["Website Development.", "Website Designer.", "Vibe Coding."],
                   autoStart: true,
                   loop: true,
                   delay: 80,

@@ -28,13 +28,21 @@ const projects = [
     demo: "#portofolio",
     repo: "https://github.com/Ijaldisini/BrownyGift",
   },
+  {
+    id: 3,
+    title: "FarmEquip",
+    desc: "FarmEquip adalah platform web full-stack untuk rental alat-alat pertanian modern. Proyek ini menggabungkan Laravel (PHP) sebagai frontend dan Go (Golang) sebagai REST API backend, dengan database MySQL dan penyimpanan gambar di Cloudinary.",
+    image: "/projects/farmequip.png",
+    demo: "#portofolio",
+    repo: "https://github.com/Darrel-jpg/FarmEquip",
+  }
 ];
 
 const certificates = [
-  "/certificates/cert1.jpg",
-  "/certificates/cert1.jpg",
-  "/certificates/cert1.jpg",
-  "/certificates/cert1.jpg",
+  "/certificates/compiler.png",
+  "/certificates/icom.png",
+  "/certificates/ireach.png",
+  "/certificates/bioetanol.png",
 ];
 
 const techStack = [
@@ -510,11 +518,10 @@ export default function Portofolio() {
                   <div className="absolute inset-0 bg-gray-800 flex items-center justify-center text-gray-500">
                     Certificate Image
                   </div>
-                  {/* <Image src={cert} alt={`Certificate ${index + 1}`} fill className="object-cover hover:scale-105 transition-transform duration-500" /> */}
+                  <Image src={cert} alt={`Certificate ${index + 1}`} fill className="object-cover hover:scale-105 transition-transform duration-500" />
 
                   {/* Overlay Effect */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                    <span className="text-white font-medium">Lihat Detail</span>
                   </div>
                 </div>
               ))}

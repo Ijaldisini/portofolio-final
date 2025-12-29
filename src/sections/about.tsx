@@ -79,7 +79,7 @@ export default function About() {
               <div className="p-3 rounded-lg bg-emerald-500/20 text-emerald-400 group-hover:scale-110 transition-transform">
                 <Code2 size={24} />
               </div>
-              <span className="text-4xl font-bold text-white">soon...</span>
+              <span className="text-4xl font-bold text-white">3</span>
             </div>
             <h3 className="text-lg font-semibold text-white mb-1">
               Total Projects
@@ -99,7 +99,7 @@ export default function About() {
               <div className="p-3 rounded-lg bg-emerald-500/20 text-emerald-400 group-hover:scale-110 transition-transform">
                 <Award size={24} />
               </div>
-              <span className="text-4xl font-bold text-white">soon...</span>
+              <span className="text-4xl font-bold text-white">4</span>
             </div>
             <h3 className="text-lg font-semibold text-white mb-1">
               Certificates
