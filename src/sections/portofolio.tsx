@@ -39,6 +39,7 @@ const projects = [
 ];
 
 const certificates = [
+  "/certificates/pengurus.png",
   "/certificates/compiler.png",
   "/certificates/icom.png",
   "/certificates/ireach.png",
