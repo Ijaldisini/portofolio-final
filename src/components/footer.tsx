@@ -45,7 +45,6 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-[#050505] border-t border-white/10 pt-16 pb-8 overflow-hidden">
-      {/* Background Glow Halus di bawah */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-emerald-500/5 blur-[100px] -z-10" />
 
       <div className="container mx-auto px-6">
@@ -61,7 +60,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Social Links (Connect with Me) */}
           <div className="flex flex-col items-center md:items-end">
             <span className="text-sm font-semibold text-emerald-400 mb-4 tracking-wider uppercase">
               Connect With Me
@@ -71,7 +69,7 @@ export default function Footer() {
                 <Link
                   key={index}
                   href={social.href}
-                  target="_blank" // Membuka di tab baru
+                  target="_blank"
                   className="p-3 rounded-full bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:bg-emerald-600 hover:border-emerald-500 hover:scale-110 hover:-translate-y-1 transition-all duration-300 shadow-lg"
                   aria-label={social.name}
                 >
@@ -82,10 +80,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Separator Line */}
         <div className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent mb-8" />
 
-        {/* Bottom Bar: Copyright & Back to Top */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
           <p>© {new Date().getFullYear()} Raditya. All rights reserved.</p>
 

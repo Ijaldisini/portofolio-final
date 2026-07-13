@@ -17,7 +17,7 @@ const Navbar = () => {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     sections.forEach((section) => {
@@ -32,28 +32,29 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "#home", id: "home" },
+    { name: "Home", href: "", id: "home" },
     { name: "About", href: "#about", id: "about" },
     { name: "Portofolio", href: "#portofolio", id: "portofolio" },
     { name: "Contact", href: "#contact", id: "contact" },
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center p-6">
-      {/* Container Navbar Glassmorphism */}
-      <div className="flex items-center gap-1 md:gap-4 px-6 py-3 rounded-full border border-white/10 bg-black/40 backdrop-blur-md shadow-lg transition-all duration-300">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center p-4 md:p-6">
+      <div className="flex items-center gap-1 md:gap-4 px-4 py-2 md:px-6 md:py-3 rounded-full border border-white/10 bg-black/40 backdrop-blur-md shadow-lg transition-all duration-300">
         {navLinks.map((link) => (
           <Link
             key={link.id}
             href={link.href}
             onClick={() => setActiveSection(link.id)}
             className={`
-              relative text-sm font-medium transition-all duration-300
+              relative font-medium transition-all duration-300 whitespace-nowrap
+              text-xs md:text-sm
+              px-3 py-1.5 md:px-4 md:py-2
               ${
                 activeSection === link.id
-                  ? /* STATE AKTIF: Teks Hijau + Efek Glow Neon (Tanpa Background Box) */
+                  ?
                     "text-emerald-400 drop-shadow-[0_0_10px_rgba(52,211,153,0.8)] scale-105"
-                  : /* STATE TIDAK AKTIF: Abu-abu biasa */
+                  :
                     "text-gray-400 hover:text-emerald-300"
               }
             `}

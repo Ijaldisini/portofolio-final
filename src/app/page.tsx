@@ -7,10 +7,9 @@ import Contact from "@/sections/contact";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen overflow-hidden">
-      {/* Efek Cahaya Blur di Background */}
-      <div className="absolute top-[-10%] left-[-10%] h-[500px] w-[500px] rounded-full bg-green-300/10 blur-[120px] -z-10" />
-      <div className="absolute bottom-[-10%] right-[-10%] h-[500px] w-[500px] rounded-full bg-green-300/10 blur-[120px] -z-10" />
+    <main className="relative min-h-screen">
+      <div className="fixed top-[-10%] left-[-10%] h-[500px] w-[500px] rounded-full bg-green-300/10 blur-[120px] -z-10 pointer-events-none" />
+      <div className="fixed bottom-[-10%] right-[-10%] h-[500px] w-[500px] rounded-full bg-green-300/10 blur-[120px] -z-10 pointer-events-none" />
 
       <Navbar />
       <div className="container mx-auto px-4">

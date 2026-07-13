@@ -1,14 +1,12 @@
 @import "tailwindcss";
 
 @layer base {
-  /* --- TAMBAHAN UNTUK SMOOTH SCROLL --- */
   html {
-    scroll-behavior: smooth; /* Agar gerakannya halus */
-    scroll-padding-top: 100px; /* Memberi jarak agar judul tidak ketutup navbar (sesuaikan angka ini) */
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
   }
 
   body {
-    /* Gunakan hitam pekat kamu */
     background-color: #050505;
     color: white;
     @apply antialiased overflow-x-hidden;
@@ -22,7 +20,6 @@
   }
 }
 
-/* Tambahkan efek cahaya hijau halus di background (Opsional) */
 body::before {
   content: "";
   position: fixed;
